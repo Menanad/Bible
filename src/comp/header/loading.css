@@ -1,0 +1,37 @@
+.mainloading{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+   backdrop-filter: blur(2px);
+    z-index: 999; 
+  
+    
+    .spiner{
+       width: 100px;
+       height: 100px;
+       border: 10px solid  var(--blue);
+       border-top: 10px solid  var(--title);
+       border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+       animation-name: spinner;
+       animation-duration: 1s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+}
+}
+@keyframes spinner {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}

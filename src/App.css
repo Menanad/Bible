@@ -1,0 +1,132 @@
+:root {
+  --primarry: black;
+  --secondary: rgb(24 24 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bgHeader: rgb(39, 39, 42);
+  --blue: rgb(93, 188, 252);
+  --icon-hover: #d4d4d8;
+}
+
+body,
+html {
+  background-color: var(--primarry);
+  scroll-behavior: smooth;
+}
+
+div.mainofverse {
+  margin: 10px;
+
+  p {
+    cursor: pointer;
+  }
+
+  p:nth-child(odd) {
+    color: var(--title);
+    /* Light gray for odd */
+  }
+
+  p:nth-child(even) {
+    color: rgb(187, 187, 197);
+    /* Light blue for even */
+  }
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: var(--bgHeader);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 10px;
+  padding:  0 0 10px 0;
+}
+
+.header div {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+.header :last-child{
+  color: rgb(224, 225, 231);
+}
+
+.active {
+  background-color: rgba(20, 20, 111, 0.443);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+select {
+  background-color: var(--title);
+}
+
+.btn {
+  margin: 0 5px;
+  text-align: center;
+  background: #4163d3;
+  font-size: 25px;
+  font-weight: 900;
+  color: aqua;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4163d3ba;
+  color: rgba(2, 247, 247, 0.795);
+}
+
+.count {
+  font-size: 20px;
+  color: var(--title);
+}
+.allheader{
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--secondary);
+  margin-top: -5px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px var(--secondary);
+}
+@media (max-width:448px) {
+  .allheader{
+    gap:0rem;
+  }
+  .count{
+    font-size: 18px;
+  }
+  .btn{
+    margin: 1px;
+  }
+  
+}
