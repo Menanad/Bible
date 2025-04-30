@@ -1,6 +1,6 @@
 :root {
-  --primarry: black;
-  --secondary: rgb(24 24 27);
+  --primarry: #000000;
+  --secondary: #18181b;
   --border: rgba(63, 63, 70, 0.4);
   --title: rgb(244 244 245);
   --subtitle: rgb(161 161 170);
